@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.dgvSongs = new System.Windows.Forms.DataGridView();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Minutos = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnSave = new System.Windows.Forms.Button();
             this.txtAlbumName = new System.Windows.Forms.TextBox();
             this.txtAuthor = new System.Windows.Forms.TextBox();
@@ -43,8 +45,6 @@
             this.dtpReleaseDate = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Minutos = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSongs)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -61,6 +61,18 @@
             this.dgvSongs.Name = "dgvSongs";
             this.dgvSongs.Size = new System.Drawing.Size(809, 270);
             this.dgvSongs.TabIndex = 0;
+            // 
+            // Nombre
+            // 
+            this.Nombre.DataPropertyName = "Name";
+            this.Nombre.HeaderText = "Name";
+            this.Nombre.Name = "Nombre";
+            // 
+            // Minutos
+            // 
+            this.Minutos.DataPropertyName = "Minutes";
+            this.Minutos.HeaderText = "Minutes";
+            this.Minutos.Name = "Minutos";
             // 
             // btnSave
             // 
@@ -201,22 +213,11 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "Author:";
             // 
-            // Nombre
-            // 
-            this.Nombre.DataPropertyName = "Name";
-            this.Nombre.HeaderText = "Name";
-            this.Nombre.Name = "Nombre";
-            // 
-            // Minutos
-            // 
-            this.Minutos.DataPropertyName = "Minutes";
-            this.Minutos.HeaderText = "Minutes";
-            this.Minutos.Name = "Minutos";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(833, 603);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtAuthor);
@@ -224,7 +225,9 @@
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.dgvSongs);
             this.Controls.Add(this.groupBox2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSongs)).EndInit();

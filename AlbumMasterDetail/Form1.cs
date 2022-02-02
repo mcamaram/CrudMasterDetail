@@ -13,6 +13,8 @@ namespace AlbumMasterDetail
         public Form1()
         {
             InitializeComponent();
+            //(new AlbumMasterDetail.DropShadow()).ApplyShadows(this);
+            //(new Core.DropShadow()).ApplyShadows(this);
             _album = new Album();
             _albumService = new AlbumService();
         }
